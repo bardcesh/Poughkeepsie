@@ -9,7 +9,7 @@ library(jsonlite)
 ## QuantAQ API:
 
 api_key = 'ALQY1DLRK62KLFI5JBV6RXGO'
-serial_number = 'MOD-PM-00042' # Specific to this monitoring device
+serial_number = 'MOD-00063' # Specific to this monitoring device
 
 base_url = "https://api.quant-aq.com/device-api/v1"
 accounts_endpoint = '/account'
@@ -116,7 +116,7 @@ get_raw_data = function(serial_number, data_points=NULL, start_date=NULL, end_da
 ##### -----  Below is the action data pull and munging
 
 
-wk <- read_csv("https://raw.githubusercontent.com/bardcesh/Stevenson-Quant-AQ/main/data/full_stevenson.csv", col_types = "cddc") 
+wk <- read_csv("https://raw.githubusercontent.com/bardcesh/Poughkeepsie/main/data/poughkeepsie.csv", col_types = "cddc") 
 
 
 wk <- wk %>%
