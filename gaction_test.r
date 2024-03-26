@@ -177,4 +177,4 @@ recent_data_h <- recent_data %>%
 #print(row)
 
 # append at the end of the csv the new data
-write_csv(recent_data_h,paste0('data/full_stevenson.csv'),append = T)   
+write_csv(recent_data_h,paste0('data/poughkeepsie.csv'),append = T)   
